@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100dvh;  //minimo tenga el alto del viewport y se expanda
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;  // deja que la ultima palabra del renglon pase a otra linea
+}
+
+a {
+background-color: transparent;
+}
+
+b, 
+strong {
+font-weight: bolder;
+}
+
+.hidden {
+  display: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}

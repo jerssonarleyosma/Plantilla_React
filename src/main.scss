@@ -1,0 +1,37 @@
+@use './_reset.scss';
+@use './variables' as *;
+
+
+// (tema oscuro)
+:root[data-theme="dark"] {
+  font-family: $primary-font;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $white-soft-color;
+  background-color: $black-color;
+  color-scheme: light dark;
+  transition: background-color 0.5s ease-in-out;
+}
+
+// (tema claro)
+:root[data-theme="light"] {
+  font-family: $primary-font;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $black-soft-color; 
+  background-color: $white-color;
+  color-scheme: light dark;
+  transition: background-color 0.5s ease-in-out;
+}
+
+
+
+#root {
+  width: 100%;
+  min-width: 350px;
+  min-height: 100dvh;
+  padding: 1.6rem;
+  position: relative;
+  align-content: center;
+}
+
