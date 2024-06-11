@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import reactLogo from './assets/reactLogo.svg'
 import viteLogo from './assets/viteLogo.svg'
 
-import './Contador.scss'
+import './styles/Contador.scss'
 
 export const Contador = () => {
     const [count, setCount] = useState(0)

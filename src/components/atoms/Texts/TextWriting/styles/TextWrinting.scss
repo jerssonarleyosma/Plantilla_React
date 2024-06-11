@@ -1,0 +1,34 @@
+@use '@variables' as *;
+
+
+  .textwriting {
+    height: 100%;
+    display: flex;
+    border-right: 10px solid black;
+    animation: blink-caret .5s step-end infinite alternate;
+    & p {
+      font-family: Consolas, Monaco, monospace;
+      font-weight: 800;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+
+
+
+  @keyframes typing {
+    from {
+      opacity: 0;
+      position: absolute;
+    }
+    to {
+      opacity: 1;
+      position: relative;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }

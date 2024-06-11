@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import './Style/Triki.scss'
-
 
 const TURNS = {
   X: 'x',
@@ -10,8 +9,11 @@ const TURNS = {
 const board = Array(9).fill(null)
 
 const Triki = () => {
+  
+
+
   return (
-    <Fragment>
+    <>
       <main className='triki-container'>
         <h1 className='triki-container__tittle'>Juego triki</h1>
         <section className='triki-container__board'>
@@ -28,7 +30,7 @@ const Triki = () => {
           }
         </section>
       </main>
-    </Fragment>
+    </ >
   )
 }
 

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './SchemeButton.scss';
-import { SvgMoon } from './assets/SvgMoon';
-import { SvgSun } from './assets/SvgSun';
+import { useState, useEffect } from 'react';
+import './styles/SchemeButton.scss';
+import { SvgMoon } from '@IconSvg/SvgMoon.jsx';
+import { SvgSun } from '@IconSvg/SvgSun.jsx';
 
 const SchemeButton = () => {
 
@@ -18,11 +18,13 @@ const SchemeButton = () => {
 
     // alterna el contenido de theme segun su valor ocacionando que useEffect se renderice de nuevo
     const toggleTheme = () => {
-        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+        setTheme((prevTheme) => {
+            return (prevTheme === 'light' ? 'dark' : 'light');
+        });
     };
     
     return (
-        <React.Fragment>
+        <>
             <label className='scheme-button' htmlFor="scheme-button" style={{ backgroundColor: theme === 'light' ? 'hsl(56, 100%, 64%)' : 'hsl(198, 96%, 26%)' }}>
                 <span className={theme === 'dark' ? 'scheme-button__tittle-light hidden' : 'scheme-button__tittle-light'}>Light</span>
                 <span className={theme === 'light' ? 'scheme-button__tittle-dark hidden' : 'scheme-button__tittle-dark'}>Dark</span>
@@ -42,7 +44,7 @@ const SchemeButton = () => {
                     className='hidden'
                 />
             </label> 
-        </React.Fragment>
+        </>
     );
 }
 

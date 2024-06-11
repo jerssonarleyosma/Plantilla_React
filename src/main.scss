@@ -9,8 +9,8 @@
   font-weight: 400;
   color: $white-soft-color;
   background-color: $black-color;
-  color-scheme: light dark;
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color-scheme: dark;
 }
 
 // (tema claro)
@@ -20,8 +20,8 @@
   font-weight: 400;
   color: $black-soft-color; 
   background-color: $white-color;
-  color-scheme: light dark;
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color-scheme: light;
 }
 
 
