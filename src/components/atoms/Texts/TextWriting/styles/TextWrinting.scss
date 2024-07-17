@@ -1,27 +1,39 @@
 @use '@variables' as *;
 
 
-  .textwriting {
-    height: 100%;
-    display: flex;
-    border-right: 10px solid black;
-    animation: blink-caret .5s step-end infinite alternate;
-    & p {
-      font-family: Consolas, Monaco, monospace;
-      font-weight: 800;
-      opacity: 0;
-      position: absolute;
+  .textwriting-container {
+    text-align: center;
+    &__line{
+      display: inline-flex;
+      animation: blink-caret .5s step-end infinite alternate;
+      & p {
+        display: inline-block;
+        position: absolute;
+        font-family: Consolas, Monaco, monospace;
+        font-weight: 400;
+        color: light-dark(black, white);
+        opacity: 0 ;
+      }
     }
+    
   }
 
 
 
   @keyframes typing {
-    from {
+    0% {
       opacity: 0;
       position: absolute;
     }
-    to {
+    20% {
+      opacity: 0;
+      position: relative;
+    }
+    90% {
+      opacity: 0;
+      position: relative;
+    }
+    100% {
       opacity: 1;
       position: relative;
     }

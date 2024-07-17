@@ -1,10 +1,10 @@
 @use '@variables' as *;
 
 .FolderInteractive-container {
-    margin: auto;
     position: relative;
-    display: grid;
-    grid-template-rows: 80% 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     &__folder {
@@ -18,19 +18,19 @@
             width: 60%;
             height: 60%;
             position: absolute;
-            border-radius: 12px;
+            border-radius: 5px;
             &:nth-child(1) {
                 z-index: 1;
-                background-color: $p-color;
+                background-color: light-dark($p-color, $s-color);
                 &::after {
                     content: '';
                     width: 30%;
                     height: 100%;
                     position: absolute;
                     top: -20%;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;
-                    background-color: $p-color;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    background-color: light-dark($p-color, $s-color);
                 }
             }
             &:nth-child(2) {
@@ -52,27 +52,18 @@
                 transform: skewX(-15deg) scaleY(0.85);
                 border: 1px solid black;
                 box-shadow: 2px 2px 2px #242424;
-                background: linear-gradient(0deg, $p2-color 0%, $p-color 47%);
+                background: linear-gradient(0deg, light-dark($p2-color, $s2-color) 0%, light-dark($p-color, $s-color) 47%);
                 transition: all 0.3s 0.3s ease-in-out;
             }
         }
     }
-    &__tittle {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &:hover .FolderInteractive-container__folder > div:nth-child(2) {
+    &:hover &__folder > div:nth-child(2) {
         transform: scaleX(0.9) scaleY(1.3);
     }
-    &:hover .FolderInteractive-container__folder > div:nth-child(3) {
+    &:hover &__folder > div:nth-child(3) {
         transform: skewX(-25deg) scaleY(0.67);
         box-shadow: 2px 2px 6px #242424;
     }
-    &:hover .FolderInteractive-container__tittle > h3 {
-        color: $t-color;
-    }
+
     
 }

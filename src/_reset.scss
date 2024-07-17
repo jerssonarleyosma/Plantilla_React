@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  min-height: 100dvh;  //minimo tenga el alto del viewport y se expanda
+  width: 100vw;
+  height: 100dvh; 
 }
 
 h1, h2, h3, h4 {
@@ -17,20 +18,16 @@ h1, h2, h3, h4 {
 }
 
 p {
-  text-wrap: pretty;  // deja que la ultima palabra del renglon pase a otra linea
+  text-wrap: pretty; 
 }
 
 a {
-background-color: transparent;
+  background-color: transparent;
 }
 
 b, 
 strong {
-font-weight: bolder;
-}
-
-.hidden {
-  display: none;
+  font-weight: bolder;
 }
 
 svg {

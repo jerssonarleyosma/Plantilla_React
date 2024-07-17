@@ -1,37 +1,43 @@
-@use './_reset.scss';
-@use './variables' as *;
+@use '@reset' as reset;
+@use '@variables' as *;
 
 
 // (tema oscuro)
 :root[data-theme="dark"] {
-  font-family: $primary-font;
-  line-height: 1.5;
-  font-weight: 400;
   color: $white-soft-color;
   background-color: $black-color;
-  transition: all 0.5s ease-in-out;
   color-scheme: dark;
 }
 
 // (tema claro)
 :root[data-theme="light"] {
-  font-family: $primary-font;
-  line-height: 1.5;
-  font-weight: 400;
   color: $black-soft-color; 
   background-color: $white-color;
-  transition: all 0.5s ease-in-out;
   color-scheme: light;
 }
 
 
-
 #root {
-  width: 100%;
-  min-width: 350px;
-  min-height: 100dvh;
-  padding: 1.6rem;
   position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1.6rem;
   align-content: center;
+  font-family: $primary-font;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: light-dark($black-color, $white-color) light-dark($grey-soft-color, $black-soft-color);
+  scrollbar-gutter: stable;
 }
 
+::selection {
+  background: light-dark($p-color, $s-color);
+  color: light-dark($white-soft-color, $black-soft-color);
+}
+
+
+.hidden {
+  display: none;
+}

@@ -14,9 +14,9 @@ export default defineConfig({
       '@molecules': '/src/components/molecules',
       '@organisms': '/src/components/organisms',
       '@templates': '/src/components/templates',
+      '@tutoriales': '/src/components/Tutoriales',
       '@variables': '/src/_variables.scss',
       '@reset': '/src/_reset.scss',
-      '@IconSvg': '/src/assets/IconSvg/',
     }
   },
 })

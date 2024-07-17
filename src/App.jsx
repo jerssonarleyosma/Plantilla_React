@@ -1,18 +1,16 @@
-import React from 'react'
-import { SchemeButton } from './components/molecules/SchemeButton/SchemeButton.jsx'
-import { JuegoTriki } from '@templates/JuegoTriki/JuegoTriki.jsx'
-
-
+import React from 'react';
+import { GlobalData } from './components/context/GlobalContext.jsx';
+import { SchemeButtonA } from '@atoms/SchemeButons/SchemeButtonA/SchemeButtonA.jsx';
+import { Triki } from '@tutoriales/Triki/Triki.jsx';
 
 
 const App = () => {
-
   return (
-    <React.Fragment>
-      <SchemeButton />
-      <JuegoTriki/>
-    </React.Fragment>
-  )
-}
+    <GlobalData>
+      <SchemeButtonA />
+      <Triki />
+    </GlobalData>
+  );
+};
 
-export { App }
+export { App };
