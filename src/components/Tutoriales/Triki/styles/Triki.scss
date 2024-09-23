@@ -7,4 +7,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 32px;
+    &__tittle {
+        height: 60px;
+    }
+    &__game {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 4px;
+    }
+    &__square {
+        width: 100px;
+        height: 100px;
+        border: 1px solid light-dark(black, white);
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        color: light-dark(black, white);
+        font-size: 5rem;
+        vertical-align: middle;
+        transition: all 0.3s ease-in-out;
+        &--selected {
+            background-color: light-dark(black, white);
+            color: light-dark(white, black);
+            font-size: 6rem;
+        }
+    }
+    &__turn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
 }

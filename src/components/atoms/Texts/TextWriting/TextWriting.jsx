@@ -3,7 +3,7 @@ import './styles/TextWrinting.scss'
 
 
 /// como usar
-//funciona solo con text="string" o text={variablestring} el tamaño duracion y  tie3mpo entre animaciones van por defecto
+//funciona solo con text="string" o text={variablestring} el tamaño duracion y tiempo entre animaciones van por defecto
 //si desea agregar mas props esta:
 //width el cual es para darle el ancho al componente (su contenido se desborda) redive valores como '16px' '1.6rem'
 //heidht funciona igual que el width
@@ -14,7 +14,7 @@ import './styles/TextWrinting.scss'
 //restar es el tiempo desde que inicia la animacion hasta que vuleva a iniciar y recive numeros planos que son representados en milisegundos, ejemplo 8000 son 8 segundos
 
 
-const separateData = (str) => {
+const separateDataSize = (str) => {
     
     const match = str.match(/(\d+(\.\d+)?)([a-zA-Z%]*)/);
 
@@ -29,7 +29,7 @@ const separateData = (str) => {
 
 export const TextWriting = ({ text, width, height, size, boldtext, blur, duration, restart }) => {
     const characters = Array.from(text);
-    const sise = size? separateData(size) : [1.6, 'rem'];
+    const sise = size? separateDataSize(size) : [1.6, 'rem'];
     const totalDuration = duration? duration : 5;
     const [key, setKey] = useState(0); // key para forzar re-render
 
@@ -41,11 +41,11 @@ export const TextWriting = ({ text, width, height, size, boldtext, blur, duratio
         return () => clearInterval(interval); 
     }, []);
 
-    
+    console.log(`${separateDataSize(size)[0]*2}${separateDataSize(size)[1]}`)
 
     return (
         <div className="textwriting-container" style={{width: width? width : 'auto', height: height? height : 'auto'}} key={key}>
-            <div className="textwriting-container__line" style={{ borderRight: `${sise[0]/2}${sise[1]} solid light-dark(black, white)` }}>
+            <div className="textwriting-container__line" style={{ borderRight: `${sise[0]/3}${sise[1]} solid light-dark(black, white)` }}>
                 {characters.map((char, index) => {
                     const delay = `${index * (totalDuration / characters.length)}s`;
                     const isBold = boldtext? boldtext.includes(index) : false;
@@ -62,6 +62,7 @@ export const TextWriting = ({ text, width, height, size, boldtext, blur, duratio
                         </p>
                     );
                 })}
+                
             </div>
             
         </div>
