@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', // Escuchar en todas las interfaces
-    port: 5173, // El puerto que deseas usar
+    port: 3003, // El puerto que deseas usar
   },
   resolve: {
     alias: {

@@ -41,8 +41,6 @@ export const TextWriting = ({ text, width, height, size, boldtext, blur, duratio
         return () => clearInterval(interval); 
     }, []);
 
-    console.log(`${separateDataSize(size)[0]*2}${separateDataSize(size)[1]}`)
-
     return (
         <div className="textwriting-container" style={{width: width? width : 'auto', height: height? height : 'auto'}} key={key}>
             <div className="textwriting-container__line" style={{ borderRight: `${sise[0]/3}${sise[1]} solid light-dark(black, white)` }}>
