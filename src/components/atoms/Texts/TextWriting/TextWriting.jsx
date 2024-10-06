@@ -23,6 +23,7 @@ const separateDataSize = (str) => {
         const unit = match[3] || ''; 
         return [number, unit];
     }
+    
     return [1.6, 'rem']; 
     
 }

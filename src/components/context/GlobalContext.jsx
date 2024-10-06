@@ -3,6 +3,7 @@ import React, { createContext, useState, useEffect } from 'react';
 const GlobalContext = createContext();
 
 const GlobalData = ({ children }) => {
+
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {

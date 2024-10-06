@@ -15,11 +15,11 @@ const SchemeButtonA = () => {
                 <span className={theme === 'dark' ? 'scheme-buttonA__tittle-light hidden' : 'scheme-buttonA__tittle-light'}>Light</span>
                 <span className={theme === 'light' ? 'scheme-buttonA__tittle-dark hidden' : 'scheme-buttonA__tittle-dark'}>Dark</span>
                 <div className='scheme-buttonA__circle' style={{ transform: theme === 'light' ? 'translateX(53px)' : 'translateX(5px)', background: theme === 'light' ? 'white': 'hsl(198, 77%, 51%)'}}>
-                    <span>
-                        <SvgSun className={theme === 'dark' ? 'hidden' : ''} />
+                    <span  className={theme === 'dark' ? 'hidden' : ''}>
+                        <SvgSun />
                     </span>
-                    <span>
-                        <SvgMoon className={theme === 'light' ? 'hidden' : ''} />
+                    <span className={theme === 'light' ? 'hidden' : ''}>
+                        <SvgMoon />
                     </span>
                 </div>
                 <input 

@@ -3,7 +3,7 @@ import './styles/FolderInteractive.scss'
 
 //falta agregar animacion para que se muestre la hoja con los datos dentro y que los que reciba sea cualquier cosa o cosas y esto hacerlo en un organismo
 
-const FolderInteractive = ({ width, height}) => {
+const FolderInteractive = ({ width, height }) => {
   return (
     <>
         <div 
