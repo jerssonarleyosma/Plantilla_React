@@ -13,7 +13,6 @@ import './styles/TextWrinting.scss'
 //duration recive numeros planos y estos son representados en segundos en el codigo
 //restar es el tiempo desde que inicia la animacion hasta que vuleva a iniciar y recive numeros planos que son representados en milisegundos, ejemplo 8000 son 8 segundos
 
-
 const separateDataSize = (str) => {
     
     const match = str.match(/(\d+(\.\d+)?)([a-zA-Z%]*)/);
