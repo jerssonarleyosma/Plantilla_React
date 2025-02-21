@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { GlobalData } from './components/context/GlobalContext.jsx';
-import { SchemeButtonA } from '@atoms/SchemeButons/SchemeButtonA/SchemeButtonA.jsx';
-import { Triki } from '@tutoriales/Triki/Triki.jsx';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { GlobalData } from './context/GlobalContext.jsx';
 
+import { SchemeButtonA } from './components/atoms/SchemeButons/SchemeButtonA/SchemeButtonA.jsx';
+import { Dibujos } from './components/Tutoriales/dibujos/Dibujos.jsx';
 
 const App = () => {
 
@@ -11,11 +11,12 @@ const App = () => {
   return (
     <GlobalData>
 
-      <SchemeButtonA />
-
+      < SchemeButtonA />
+      
       <Router>
         <Routes>
-          <Route path="/tutoriales/triki" element={<Triki />} />
+          <Route path="/" element={<Dibujos/>} />
+        
         </Routes>
       </Router>
       

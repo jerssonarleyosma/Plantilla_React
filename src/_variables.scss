@@ -1,19 +1,59 @@
-// colores
-$black-color: #242424;
-$black-soft-color: #213547;
+// 🎨 Colores oscuros, claros y grises 
+$b-color: #242424; 
+$bo-color: #242424d3;
 
-$white-color: #F8F8F8 ;
-$white-soft-color: rgba(255, 255, 255, 0.87);
+$w-color: #F9F9F9; 
+$wo-color: #f9f9f9d3;
 
-$grey-color: #505050;
-$grey-soft-color: #cccccc;
+$g-color: #505050; 
+$gs-color: #cccccc; 
+$gw: #f5f5f5; 
 
-$p-color: #1F2A8F;
-$p2-color: #20233A;
-$s-color: #D2FFB8;
-$s2-color: #488F1F;
-$t-color: #8F3F1F;
+// 🎨 Colores principales para MODO CLARO
+$p-color: #f7e018; //Elementos principales (secciones grandes, fondos de tarjetas, botones principales)
+$p2-color: #A29946; //Sombra, degradados, hover, bordes sutiles
+$s-color: #19D4F7; //Fondos principales, títulos secundarios, enlaces, detalles contrastantes
+$s2-color: #487078; //Hover en elementos secundarios, secciones más profundas (osea marcar más el contraste o reeplazar negros o blancos)
+$ac-color: #F71978; //Botones de CTA, detalles en enlaces, decoraciones clave
+$ac2-color: #385870; //Detalles menores, sombras profundas(osea marcar más el contraste o reeplazar negros o blancos), iconos pequeños
 
-//fuentes
+// 🎨 Colores principales para MODO OSCURO
+$Op-color: #f7e018;  
+$Op2-color: #A29946;
+$Os-color: #19D4F7;  
+$Os2-color: #487078;
+$Oac-color: #F71978; 
+$Oac2-color: #385870;
+
+// 🖋️ Fuente principal
 $primary-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+//como se usan las fuentes
+
+
+// .jetbrains-mono-<uniquifier> {
+//     font-family: "JetBrains Mono", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+// }
+
+
+
+// .roboto-<uniquifier> {
+//     font-family: "Roboto", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//     font-variation-settings: "wdth" 50/150 o mas(letras anchas o angostas),  /  "ital" 0/1 (italica),  /   "wght" 0/900(peso);
+// }
+
+
+
+// .lato-thin {
+//     font-family: "Lato", serif;
+//     font-weight: 100;
+//     font-style: italic/normal;
+// }
+  
+  

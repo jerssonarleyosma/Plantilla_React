@@ -3,16 +3,16 @@
 
 
 // (tema oscuro)
-:root[data-theme="dark"] {
-  color: $white-soft-color;
-  background-color: $black-color;
+:root.dark {
+  color: $w-color;
+  background-color: $b-color;
   color-scheme: dark;
 }
 
 // (tema claro)
-:root[data-theme="light"] {
-  color: $black-soft-color; 
-  background-color: $white-color;
+:root.light {
+  color: $b-color; 
+  background-color: $w-color;
   color-scheme: light;
 }
 
@@ -27,11 +27,11 @@
   font-weight: 400;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: light-dark($black-color, $white-color) light-dark($grey-soft-color, $black-soft-color);
+  scrollbar-color: light-dark($b-color, $w-color) light-dark($gs-color, $b-color);
   scrollbar-gutter: stable;
 }
 
 ::selection {
   background: light-dark($p-color, $s-color);
-  color: light-dark($white-soft-color, $black-soft-color);
+  color: light-dark($w-color, $b-color);
 }

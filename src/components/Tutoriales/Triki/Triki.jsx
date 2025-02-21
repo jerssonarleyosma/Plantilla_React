@@ -42,18 +42,29 @@ const Triki = () => {
     for (const combo of WINNER_COMBOS) {
       const [a, b, c] = combo
 
+      const draw = boardToCheck.every((ele) => ele !== null);
+
+      if(draw) {
+        if( boardToCheck[a] && boardToCheck[a] == boardToCheck[b] && boardToCheck[a] == boardToCheck[c] ) {
+          return boardToCheck[a]
+        }
+        return 'Empate'
+      }
+
       if( boardToCheck[a] && boardToCheck[a] == boardToCheck[b] && boardToCheck[a] == boardToCheck[c] ) {
         return boardToCheck[a]
       }
+      
     }
     return null
   } 
 
-  const updateBoard = (index) => {
+  const actualizarTablero = (index) => {
     
     if (board[index] || winner) return
 
     const newBoard = [...board]
+
     newBoard[index] = turn
     setBoard(newBoard)
 
@@ -70,11 +81,20 @@ const Triki = () => {
 
   }
 
+  const cambiarTurno = (turno) => {
+    setTurn(turno)
+  }
+
+  const reiniciar = () => {
+    setBoard(Array(9).fill(null))
+    setTurn(TURNS.X)
+    setWinner(null)
+  }
 
   return (
     <main className='triki'>
         <h2 className='triki__tittle'>
-            <TextWriting text={'Juego de triki'} size={'3.6rem'} duration={3} blur={[9,10,11,12,13]} restart={20000} boldtext={[9,10,11,12,13]}/>
+          <TextWriting text='Juego de Triki' size='3rem' boldtext={[9, 10, 11, 12, 13]} duration={2} restart={18000} />
         </h2>
         <section className='triki__game'>
           {
@@ -83,7 +103,7 @@ const Triki = () => {
                 <Square 
                   key={ind}
                   index={ind}
-                  updateBoard={updateBoard}
+                  updateBoard={actualizarTablero}
                 >
                   {board[ind]}
                 </Square>
@@ -92,13 +112,26 @@ const Triki = () => {
           }
         </section>
         <section className='triki__turn'>
-        <Square isSelected={turn == TURNS.X}>
+        <Square isSelected={turn == TURNS.X} updateBoard={ cambiarTurno } index={TURNS.X}>
             {TURNS.X}
           </Square>
-        <Square isSelected={turn == TURNS.O}>
+        <Square isSelected={ turn == TURNS.O } updateBoard={ cambiarTurno } index={TURNS.O}>
             {TURNS.O}
         </Square>
         </section>
+        {
+          winner && (
+            <section className='triki__winner'>
+              <h3 className='triki__winner-tittle'>
+                {
+                  winner === 'Empate' ? 'Empate 描く' : `Ganador: ${winner}`
+                }
+              </h3>
+              <button className='triki__winner-reset' onClick={reiniciar}>Reiniciar</button>
+            </section>
+          )
+        }
+        
     </main>
   )
 }

@@ -31,18 +31,18 @@ export const TextWriting = ({ text, width, height, size, boldtext, blur, duratio
     const characters = Array.from(text);
     const sise = size? separateDataSize(size) : [1.6, 'rem'];
     const totalDuration = duration? duration : 5;
-    const [key, setKey] = useState(0); // key para forzar re-render
+    const [actu, setActu] = useState(0); // key para forzar re-render
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setKey(prev => prev + 1); // incrementa key para re-render
+            setActu(prev => prev + 1); // incrementa key para re-render
         }, restart? restart : 7000); 
 
         return () => clearInterval(interval); 
     }, []);
 
     return (
-        <div className="textwriting-container" style={{width: width? width : 'auto', height: height? height : 'auto'}} key={key}>
+        <div className="textwriting-container" style={{width: width? width : 'auto', height: height? height : 'auto'}} key={actu}>
             <div className="textwriting-container__line" style={{ borderRight: `${sise[0]/3}${sise[1]} solid light-dark(black, white)` }}>
                 {characters.map((char, index) => {
                     const delay = `${index * (totalDuration / characters.length)}s`;
