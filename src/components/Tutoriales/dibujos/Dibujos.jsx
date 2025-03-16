@@ -82,11 +82,15 @@ const Dibujos = () => {
         <div className='htmlLogo__number'></div>
       </div>
 
-      <div className='dibujos__contenedor'>
-        
+      <div className='dibujos__contenedor cssLogo'>
+        <div className='cssLogo__tittle'>CSS</div>
+        <div className='cssLogo__back'></div>      
+        <div className='cssLogo__between'></div>
+        <div className='cssLogo__number'></div>
+        <img className='cssLogo__img' src="../../../../src/assets/images/dibujos/LogoCSS.png" alt="" />
       </div>
 
-      <div className='dibujos__contenedor'>
+      <div className='dibujos__contenedor mike'>
         
       </div>
 

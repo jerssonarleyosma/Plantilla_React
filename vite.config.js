@@ -19,6 +19,7 @@ export default defineConfig({
       '@tutoriales': '/src/components/Tutoriales',
       '@variables': '/src/_variables.scss',
       '@reset': '/src/_reset.scss',
+      '@images': '/src/assets/images',
     }
   },
 })
