@@ -7,13 +7,15 @@
   color: $w-color;
   background-color: $b-color;
   color-scheme: dark;
+  transition: background-color 0.3s ease-in-out;
 }
 
 // (tema claro)
 :root.light {
   color: $b-color; 
-  background-color: $w-color;
+  background-color: $s-color;
   color-scheme: light;
+  transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -22,9 +24,6 @@
   width: 100vw;
   height: 100dvh;
   padding: 1.6rem;
-  line-height: 1.5;
-  font-weight: 400;
-  font-family: "Roboto", serif;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: light-dark($b-color, $w-color) light-dark($gs-color, $b-color);

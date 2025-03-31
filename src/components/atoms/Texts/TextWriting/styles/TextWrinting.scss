@@ -9,13 +9,14 @@
       & p {
         display: inline-block;
         position: absolute;
-        font-family: Consolas, Monaco, monospace;
-        font-weight: 400;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
         color: light-dark(black, white);
         opacity: 0 ;
       }
       & span {
         animation: blink-caret .5s step-end infinite alternate;
+        
       }
     }
     
@@ -24,18 +25,16 @@
   @keyframes typing {
     0% {
       opacity: 0;
+      transform: translateY(-10px);
       position: absolute;
     }
-    20% {
-      opacity: 0;
-      position: relative;
-    }
-    90% {
-      opacity: 0;
+    50% {
+      opacity: 0.5;
       position: relative;
     }
     100% {
       opacity: 1;
+      transform: translateY(0);
       position: relative;
     }
   }

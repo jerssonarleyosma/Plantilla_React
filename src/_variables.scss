@@ -1,5 +1,5 @@
 // 🎨 Colores oscuros, claros y grises 
-$b-color: #242424; 
+$b-color: #1E1E1E; 
 $bo-color: #242424d3;
 
 $w-color: #F9F9F9; 
@@ -9,21 +9,28 @@ $g-color: #505050;
 $gs-color: #cccccc; 
 $gw: #f5f5f5; 
 
-// 🎨 Colores principales para MODO CLARO
-$p-color: #f7e018; //Elementos principales (secciones grandes, fondos de tarjetas, botones principales)
-$p2-color: #A29946; //Sombra, degradados, hover, bordes sutiles
-$s-color: #19D4F7; //Fondos principales, títulos secundarios, enlaces, detalles contrastantes
-$s2-color: #487078; //Hover en elementos secundarios, secciones más profundas (osea marcar más el contraste o reeplazar negros o blancos)
-$ac-color: #F71978; //Botones de CTA, detalles en enlaces, decoraciones clave
-$ac2-color: #385870; //Detalles menores, sombras profundas(osea marcar más el contraste o reeplazar negros o blancos), iconos pequeños
+// 🎨 Colores principales para MODO CLARO y MODO OSCUEO
 
-// 🎨 Colores principales para MODO OSCURO
-$Op-color: #f7e018;  
-$Op2-color: #A29946;
-$Os-color: #19D4F7;  
-$Os2-color: #487078;
-$Oac-color: #F71978; 
-$Oac2-color: #385870;
+
+$p-color: #fffef5;
+$p2-color: #fffbe5;
+$p3-color: #C4B53F;
+$p4-color: #91894C;
+$p5-color: #38330a;
+
+$s-color: #f4fdff; 
+$s2-color: #e6fdff;
+$s3-color: #44AAB8;
+$s4-color: #4A7378;
+$s5-color: #094047;
+
+
+
+$ac-color: #F7DF1E; 
+$ac2-color: #1EDEF7;
+$ac3-color: #F71E8D;
+
+
 
 
 //como se usan las fuentes

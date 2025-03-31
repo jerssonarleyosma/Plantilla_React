@@ -16,10 +16,10 @@ import './styles/TextWrinting.scss'
 const separateDataSize = (str) => {
     
     const match = str.match(/(\d+(\.\d+)?)([a-zA-Z%]*)/);
-
+    console.log(match)
     if (match) {
         const number = parseFloat(match[1]); 
-        const unit = match[3] || ''; 
+        const unit = match[3] || 'px'; 
         return [number, unit];
     }
     
@@ -53,7 +53,7 @@ export const TextWriting = ({ text, width, height, size, boldtext, blur, duratio
                             fontSize: size? size : '1.6rem',
                             animation: `typing 0.1s ease-in ${delay} 1 forwards`,
                             width: char === " " ? size? size : '1.6rem' : undefined,
-                            fontWeight: isBold ? '800' : 'normal', 
+                            fontWeight: isBold ? '700' : 'normal', 
                             textShadow: isBlur ? `0px 0px ${size? size : '1.6rem'} light-dark(#242424, #ffffff)` : '',
                         }}>
                             {char}

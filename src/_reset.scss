@@ -15,6 +15,8 @@ body {
 
 h1, h2, h3, h4 {
   text-wrap: balance;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700 ;
 }
 
 p {
@@ -24,6 +26,17 @@ p {
 b, 
 strong {
   font-weight: bolder;
+}
+
+body, p, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, span {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hidden {

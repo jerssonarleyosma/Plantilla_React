@@ -15,7 +15,7 @@ const Portfolio = () => {
        
         <h3 className='introduction__name'>Jersson osma</h3>
         <p className='introduction__paragraph'>
-          <span>👋</span> <span>Desarrollador Frontend</span> <br /><span>🔧</span> Mi enfoque principal es JavaScript y la maquetación precisa de diseños web.
+          <span>👋</span> <span>Desarrollador Frontend</span> <br /><span>🔧</span> <span>Mi enfoque principal es JavaScript y la maquetación precisa de diseños web.</span>
         </p>
         <img className='introduction__image' src='/src/assets/images/portfolio/perfil.jpg' alt="Perfil" />
         <div className='introduction__social social-link'>
@@ -301,15 +301,15 @@ const Portfolio = () => {
       <div className='portfolio__contact contact'>
         <form action="post" className='contact__form'>
           <h3>Escribeme</h3>
-          <div>
-            <input type="text" name="name" id="name" placeholder='Nombre'/>
-          </div>
-          <div>
-            <input type="email" name="email" id="email" placeholder='Correo'/>
-          </div>
-          <div>
-            <textarea name="message" id="message" placeholder='Mensaje'></textarea>
-          </div>
+      
+          <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')}/>
+       
+     
+          <input type="email" name="email" id="email" placeholder='Correo' required/>
+         
+        
+          <textarea name="message" id="message" placeholder='Mensaje' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} ></textarea>
+   
           <button type="submit">Enviar mensaje</button>
 
         </form>
