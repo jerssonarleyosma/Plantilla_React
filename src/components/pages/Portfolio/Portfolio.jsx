@@ -36,265 +36,266 @@ const Portfolio = () => {
       
       <div className='portfolio__projects projects'>
         <div className='projects__tittle'>
-          <TextWriting text='Proyectos' size='2rem' duration={5} restart={10000} boldtext={[0,1,2,3,4,5,6,7,8]} />
+          <TextWriting text='Proyectos' size='2rem' height='35px' duration={0.7} restart={15000} boldtext={[0,1,2,3,4,5,6,7,8]} />
         </div>
 
-        <div className='projects__wrap'>
+        <div className='projects__content content'>
           
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+          <div className='content__wrap wrap'>
+            
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-              </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div className='projects__item'>
-            <div className='projects__imagen'>
-              <img src={imgproyect} alt="" />
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
 
-            </div>
-            <div className='projects__description'>
-              <h3>Nombre Del Proyecto</h3>
-              <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-              <div>
-                <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
               </div>
-              <div>
-                <a href="">Ver Proyecto</a>
-                <a href="">Ver Código</a>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
               </div>
+              <div></div>
             </div>
-            <div></div>
+
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+            
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
+            <div className='wrap__card card'>
+              <div className='card__imagen'>
+                <img src={imgproyect} alt="" />
+
+              </div>
+              <div className='card__description'>
+                <h3>Nombre Del Proyecto</h3>
+                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
+                <div>
+                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
+                </div>
+                <div>
+                  <a href="">Ver Código</a>
+                  <a href="">Ver Proyecto</a>
+                </div>
+              </div>
+              <div></div>
+            </div>
+
           </div>
-          
+
         </div>
+
+        
 
       </div>
 

@@ -13,10 +13,7 @@
         font-weight: 700;
         color: light-dark(black, white);
         opacity: 0 ;
-      }
-      & span {
-        animation: blink-caret .5s step-end infinite alternate;
-        
+        transition: all 3s ease-in-out;
       }
     }
     
@@ -28,13 +25,9 @@
       transform: translateY(-10px);
       position: absolute;
     }
-    50% {
-      opacity: 0.5;
-      position: relative;
-    }
     100% {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0) ;
       position: relative;
     }
   }
