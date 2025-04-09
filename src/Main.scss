@@ -8,6 +8,10 @@
   background-color: $p5-color;
   color-scheme: dark;
   transition: background-color 0.3s ease-in-out;
+  &::selection {
+    background: $ac2-color;
+    color: $p5-color;
+  }
 }
 
 // (tema claro)
@@ -16,6 +20,10 @@
   background-color: $s-color;
   color-scheme: light;
   transition: background-color 0.3s ease-in-out;
+  &::selection {
+    background: $ac3-color,;
+    color: $p-color;
+  }
 }
 
 
@@ -28,9 +36,4 @@
   scrollbar-width: thin;
   scrollbar-color: light-dark($b-color, $w-color) light-dark($gs-color, $b-color);
   scrollbar-gutter: stable;
-}
-
-::selection {
-  background: light-dark($p-color, $s-color);
-  color: light-dark($w-color, $b-color);
 }

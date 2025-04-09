@@ -1,9 +1,10 @@
 import React from 'react'
 import './styles/Portfolio.scss'
-import IconMail from '@atoms/IconSvg/IconMail.jsx'
 import IconLinkedin from '@atoms/IconSvg/IconLinkedin.jsx'
 import IconGitHub from '@atoms/IconSvg/IconGitHub.jsx'
 import IconDownload from '@atoms/IconSvg/IconDownload.jsx'
+import IconUpWork from '@atoms/IconSvg/IconUpWork.jsx'
+import IconW from '@atoms/IconSvg/IconW.jsx'
 import imgproyect from '@images/portfolio/proyectos.jpg'
 import { TextWriting } from '@atoms/Texts/TextWriting/TextWriting'
 
@@ -19,8 +20,11 @@ const Portfolio = () => {
         </p>
         <img className='introduction__image' src='/src/assets/images/portfolio/perfil.jpg' alt="Perfil" />
         <div className='introduction__social social-link'>
-            <div className='social-link__item' onClick={() => {navigator.clipboard.writeText('jerssonarleyosma@gmail.com')}}>
-              <span><IconMail/> Correo</span>
+            <div className='social-link__item'>
+              <a href="https://www.upwork.com/freelancers/jerssono" target='__blank'><IconUpWork/> UpWork</a>
+            </div>
+            <div className='social-link__item'>
+              <a href="https://www.workana.com/freelancer/c98c849d6fc941e05f05a7cfd2edccaf" target='__blank'><IconW/> workana</a>
             </div>
             <div className='social-link__item'>
               <a href="https://www.linkedin.com/in/jersson-osma-3236bb2a9/" target='__blank'><IconLinkedin/> linkeding</a>
@@ -30,7 +34,7 @@ const Portfolio = () => {
             </div>
 
         </div>
-        <a  className='introduction__button' href="/src/assets/images/portfolio/perfil.jpg"  download="jersson osma CV"><span><IconDownload/></span>Descargar CV</a>
+        <a  className='introduction__button' href="/src/assets/images/portfolio/perfil.jpg"  download="jersson osma CV"><span><IconDownload/></span>CV</a>
 
       </div>
       

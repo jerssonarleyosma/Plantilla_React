@@ -9,7 +9,7 @@
     justify-content: center;
     grid-template:
         "intro intro proyects" minmax(207px, 3fr)
-        "contact contact proyects" 4fr / 190px 190px 1fr;
+        "contact contact proyects" 4fr / 210px 210px 1fr;
     ;
     gap: 28px;
     &__introduction {
@@ -46,7 +46,7 @@
         border-bottom: 1px solid light-dark($ac2-color, $ac3-color);
     }
     &__paragraph {
-        margin-bottom: 8px;
+        margin-bottom: 44px;
         position: relative;
         font-size: 1.2rem;
         font-weight: 600;
@@ -61,7 +61,7 @@
                 animation: hello 10s infinite 2s;
             }
             &:nth-child(2) {
-                padding: 4px 8px;
+                padding: 8px 16px;
                 position: relative;
                 top: -5px;
                 left: 0px;
@@ -69,6 +69,7 @@
                 color: light-dark($s5-color, $p-color);
                 font-size: 1.4rem;
                 font-weight: 500;
+                line-height: 32px;
                 background-color: light-dark($ac-color, $ac3-color);
             }
             &:nth-child(4) {
@@ -96,9 +97,11 @@
         transition: outline 0.3s ease-in-out;
     }
     &__social {
-        width: 224px;
+        position: relative;
+        right: 20px;
+        width: 290px;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 4px;
     }
     & .social-link {
@@ -110,36 +113,37 @@
             transition: background-color 0.3s ease-in-out;
             cursor: pointer;
             & span {
-                padding: 6px;
+                padding: 8px 16px;
                 display: flex;
                 align-items: end;
                 gap: 4px;
                 font-size: 0.9rem;
-                color: light-dark($p-color, $s5-color);
+                color: light-dark($s5-color, $s5-color);
                 font-weight: 700;
                 & svg {
                     width: 20px;
                     height: 20px;
-                    fill: light-dark($p-color, $s5-color);
+                    fill: light-dark($s5-color, $s5-color);
                 }
             }
             & a {
-                padding: 6px;
+                padding: 6px 7px;
                 display: flex;
                 align-items: end;
                 gap: 4px;
                 font-size: 0.9rem;
                 text-decoration: none;
-                color: light-dark($p-color, $s5-color);
+                color: light-dark($s5-color, $s5-color);
                 font-weight: 700;
                 & svg {
                     width: 20px;
                     height: 20px;
-                    fill: light-dark($p-color, $s5-color);
+                    fill: light-dark($s5-color, $s5-color);
                 }
             }
             &:hover {
                 background-color: light-dark($p2-color, $s5-color);
+                box-shadow: inset 2px 2px 2px light-dark($p5-color, $p-color), inset -2px -2px 2px light-dark($p3-color, $s4-color);
                 & span, & a {
                     color: light-dark($s5-color, $p-color);
                     & svg {
@@ -151,21 +155,21 @@
     }
     &__button {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 10px;
         padding: 8px 16px;
         border-radius: 5px;
         background-color: light-dark($p2-color, $s5-color);
         color: light-dark($s5-color, $p-color);
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         font-weight: 800;
         text-decoration: none;
         transition: background-color 0.3s ease-in-out;
         & span {
             animation: blink 10s infinite 2s;
             & svg {
-                width: 12px;
-                height: 12px;
+                width: 18px;
+                height: 18px;
                 margin-right: 8px;
                 fill: light-dark($s5-color, $p-color);
             }
@@ -270,7 +274,7 @@
         justify-content: center;
         z-index: 1;
         & div p {
-            color: light-dark($s-color, $p2-color);
+            color: light-dark($p5-color, $p2-color);
         }
     }
 
@@ -318,11 +322,11 @@
                     width: 100%;
                     max-height: 280px;
                     padding: 16px;
-                    background-color: light-dark($p2-color, $s5-color);
+                    background-color: light-dark($p-color, $s5-color);
                     border-radius: 0 0 10px 10px;
                     & > h3 {
                         margin-top: 16px;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         font-weight: 800;
                         color: light-dark($s5-color, $p2-color);
                     }
@@ -372,25 +376,31 @@
                             border: 1px solid light-dark($s5-color, $p2-color);
                             box-shadow: 1px 1px 1px light-dark($p5-color, $p2-color);
                             color: light-dark($s5-color, $p2-color);
-                            transition: background-color 0.3s ease-in-out;
+                            transition: all 0.3s ease-in-out;
+                            will-change: transform;
                             &:hover {
-                                background-color: light-dark($s5-color, $ac3-color);
-                                color: $p-color;
+                                background-color: light-dark($p3-color, $ac2-color);
+                                color: light-dark($s5-color, $p5-color);
+                                transform: scale(1.05);
+                                transition: transform 0.2s ease;
                             }
                         }
                         & > a:nth-child(2) {
-                            background-color: light-dark($s4-color, $ac3-color);
-                            color: $p-color;
+                            background-color: light-dark($p5-color, $ac2-color);
+                            color: light-dark($s-color, $p5-color);
                             &:hover {
-                                background-color: light-dark($s5-color, $p5-color);
-                                color: light-dark($p-color, $s-color);
+                                background-color: light-dark($p3-color, $p5-color);
+                                color: light-dark($s5-color, $p-color);
                             }
                         }
                     }
                 }
                 &:hover {
                     .card__imagen img {
-                        transform: scale(1.25);
+                        transform: scale(1.1);
+                    }
+                    .card__description {
+                        background-color: light-dark($p2-color, $s5-color);
                     }
                 }
                 
@@ -473,8 +483,8 @@
             }
             
             &:-webkit-autofill {
-                box-shadow: 0 0 0 30px light-dark($s5-color, $p5-color) inset ;
-                -webkit-text-fill-color: $p5-color;
+                box-shadow: 0 0 0 30px light-dark($p5-color, $s-color) inset ;
+                -webkit-text-fill-color: light-dark($s2-color, $p5-color);
             }
         }
         & textarea {
@@ -543,18 +553,17 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .portfolio {
         height: auto;
         justify-content: center;
         grid-template: 
             "intro" auto
-            "proyects" 450px
-            "contact" auto / 1fr
+            "proyects" 550px
+            "contact" auto / 1fr;
         ;
         & .introduction {
             justify-content: center;
-            
             clip-path: polygon(
                 0% 0%, 
                 calc(100% - 91px) 0%, 
@@ -568,11 +577,10 @@
             }
             &__social {
                 align-self: flex-start;
-            }   
-            
+            }
         }
         & .projects {
-            width: 70%;
+            width: 80%;
             margin: auto;
             clip-path: none;
             
